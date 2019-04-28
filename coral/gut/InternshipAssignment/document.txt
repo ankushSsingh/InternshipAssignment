@@ -1,0 +1,45 @@
+My name is Ankush Singh, and I am a final year CSE UG student at IIT Kanpur. It was a good overall learning experience. I started the assignment late on 26th evening. As I also have final semester exams in my college. So I could not devote enough time in the assignment.
+
+
+I had an experience with WebApp development from last semester. We implemented the App in NodeJS-Express Architecture but with mongodb as the DBMS. That helped me here as I implemented the NodeJS-Express architecture with MySQL. 
+
+
+Learnings ? I was not familiar with REST based Web services before this assignment. So I learned about it during the assignment. It was a new thing and will surely help me in the near future.
+
+Challenges? Turned out that the only challenging thing for me was that the DATABASE was not getting connected And it surely is now also not connecting :( .Had it been connected, I would have the app ready. I have submitted the broken app as I had no other choice. Please help me if you could understand why I am getting this error, whenever my app.js tries to connect to the amazon database.
+
+
+>>>> Error
+{ Error: Packets out of order. Got: 114 Expected: 0
+    at Parser._tryReadPacketHeader (/home/ankush/coral/node_modules/mysql/lib/protocol/Parser.js:470:15)
+    at Parser.write (/home/ankush/coral/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    at Protocol.write (/home/ankush/coral/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/ankush/coral/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/ankush/coral/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/home/ankush/coral/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/ankush/coral/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/home/ankush/coral/node_modules/mysql/lib/Connection.js:119:18)
+    at Object.<anonymous> (/home/ankush/coral/connect.js:17:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12) code: 'PROTOCOL_PACKETS_OUT_OF_ORDER', fatal: true }
+
+
+I surfed web about possible causes:
+*bind-address not correctly mentioned 
+*SQL Limits Check Violated
+*Database name error
+
+but their seem to be something else. I still don't know what
+
+Any new changes I would suggest?
+I think the assignment was good enough to analyze anyone's aptitude in NODEJS Development.
